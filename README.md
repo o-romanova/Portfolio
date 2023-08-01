@@ -1,4 +1,4 @@
-#Olga Romanova
+# Olga Romanova
 ## Portfolio. Business Intelligence Analyst
 SQL (PostgreSQL), Tableau 
 

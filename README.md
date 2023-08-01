@@ -1,7 +1,7 @@
-###Olga Romanova
+### Olga Romanova
 # Portfolio. Business Intelligence Analyst
 
-This entire project is based on the same [Superstore dataset](Sample-Superstore.xls).
+This entire project is based on the same [Superstore dataset](Sample-Superstore-dataset.xls).
 
 ## SQL
 To start with, I decided trying working with this dataset without any changes. Below are some examples of queries that repeat questions that I asked in data visualization parts.

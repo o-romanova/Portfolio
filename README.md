@@ -1,15 +1,14 @@
-# Olga Romanova
-## Portfolio. Business Intelligence Analyst
-SQL (PostgreSQL), Tableau 
+Olga Romanova
+#Portfolio. Business Intelligence Analyst
 
-This entire project is based on the same [Superstore dataset](Portfolio/Sample-Superstore.xls).
+This entire project is based on the same [Superstore dataset](Sample-Superstore.xls).
 
-### SQL
+## SQL
 To start with, I decided trying working with this dataset without any changes. Below are some examples of queries that repeat questions that I asked in data visualization parts.
 
 I used PostgreSQL and DBeaver.
 
-#### 1.1 KPIs
+### 1.1 KPIs
 ```sql
 /*Profit per month compared to the same month of the previous year (Year over year comparison)*/
 
@@ -54,7 +53,7 @@ ORDER BY
 
 ![kpi yearly](SQL/kpi-yearly.png)
 
-#### 1.2 Lost profit by state
+### 1.2 Lost profit by state
 ```sql
 /* Lost profit. Returned orders by state */
 
@@ -81,7 +80,7 @@ order by
 ![lost profit by state](SQL/lost_profit_by_state.png)
 
 
-#### 1.3 Top 10 products by profit
+### 1.3 Top 10 products by profit
 ```sql
 /* Top 10 product by profit */
 select
@@ -105,13 +104,13 @@ limit
 
 You can see the [SQL script](Portfolio/SQL/sql-queries_superstore-db.sql) for details.
 
-### DATA MODEL
+## DATA MODEL
 
 For creating a data model I used [SqlDBM](https://sqldbm.com).
 ![Physical data model](data_model_superstoredb.png)
 
 See the script [here](Portfolio/SQL/from_stg_to_dw_superstore.sql). I connected AWS RDS to my PostgreSQL instance.
 
-### TABLEAU
+## TABLEAU
 I decided to answer the same questions as in SQL section with Tableau. 
 ![Tableau profit summary 1](Portfolio/dataviz/Tableau_superstore_summary_1.png)

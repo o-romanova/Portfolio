@@ -1,5 +1,5 @@
-Olga Romanova
-#Portfolio. Business Intelligence Analyst
+###Olga Romanova
+# Portfolio. Business Intelligence Analyst
 
 This entire project is based on the same [Superstore dataset](Sample-Superstore.xls).
 
@@ -102,7 +102,7 @@ limit
 
 ![top 10 products by profit](SQL/top_10_products_profit.png)
 
-You can see the [SQL script](Portfolio/SQL/sql-queries_superstore-db.sql) for details.
+You can see the [SQL script](SQL/sql-queries_superstore-db.sql) for details.
 
 ## DATA MODEL
 
@@ -112,5 +112,27 @@ For creating a data model I used [SqlDBM](https://sqldbm.com).
 See the script [here](Portfolio/SQL/from_stg_to_dw_superstore.sql). I connected AWS RDS to my PostgreSQL instance.
 
 ## TABLEAU
-I decided to answer the same questions as in SQL section with Tableau. 
-![Tableau profit summary 1](Portfolio/dataviz/Tableau_superstore_summary_1.png)
+I decided to answer the same questions as in SQL section with Tableau. See the interactive version [here](https://public.tableau.com/app/profile/olga.romanova7546/viz/Superstore-onemoretime/Dashboard1).
+The KPIs show data compared to the same month of the previous year. Profit dynamics chart displays both dots (current and previous year profit) depending on the selected month and year.
+
+My theory was that returns impact the profit a lot, this can be seen on the bottom charts.
+
+![Tableau profit summary 1](dataviz/Tableau_superstore_summary_1.png)
+![Tableau profit summary 2](dataviz/Tableau_superstore_summary_2.png)
+
+## GOOGLE LOOKER STUDIO
+
+Pretty much the same questions answered with the help of [Google Looker Studio](https://lookerstudio.google.com/reporting/e2b934b3-b338-4fcb-81fd-2cd2e8ab776f)
+
+![Superstore dashboard in Looker studio 1](dataviz/Looker_superstore_dashboard_1.png)
+![Superstore dashboard in Looker studio 2](dataviz/Looker_superstore_dashboard_2.png)
+
+Here, I came across a restriction/bug in Looker functionality with the chart 'Profit and sales dynamics'. When trying to change data granularity in blended data (date from days to months), only ticks in axis Y change, the data stays the same by days (not by months). I used a workaround on the data source level, added the dimension in text format 'year-month'. It's not too pretty, but works nonetheless. Judging by what I found on the internet, this bug is known since 2021.
+
+Also, there is no way to edit the format of the optional metric marker currently. So if this was a dashboard for production, I would go for two separate charts for sales and profit. 
+
+## AMAZON QUICKSIGHT
+
+![Dashboard in Quicksight](dataviz/Amazon_Quicksight_dashboard.png)
+
+Unfortunately, Quicksight allows only internal access to the dashboards and reports. 

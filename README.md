@@ -27,6 +27,7 @@ ORDER BY
 	order_month;
 ```
 ![profit monthly yoy](SQL/profit_montly_yoy.png)
+
 Other KPIs are obtained the same way.
 
 ```sql
@@ -102,7 +103,7 @@ limit
 
 ![top 10 products by profit](SQL/top_10_products_profit.png)
 
-You can see the [SQL script](SQL/from_stg_to_dw_superstore.sql) for details.
+You can see the [SQL script](Portfolio/SQL/sql-queries_superstore-db.sql) for details.
 
 ### DATA MODEL
 

@@ -1,10 +1,10 @@
 ### Olga Romanova
 # Portfolio. Business Intelligence Analyst
 
-This entire project is based on the same [Superstore dataset](Sample-Superstore-dataset.xls). All the tools below I used to answer the same question: where the money come from and where it is lost.
+This entire project is based on the same [Superstore dataset](Sample-Superstore-dataset.xls). I used the tools listed below  to answer the same question: where does the money come from and where is it lost?
 
 ## SQL
-To start with, I decided trying working with this dataset without any changes. Below are some examples of queries that repeat questions that I asked in data visualization parts.
+To begin, I decided to work with the dataset as is, without any alterations. Below are some examples of queries that address the questions I explored in the data visualization parts.
 
 I used PostgreSQL and DBeaver.
 
@@ -102,34 +102,34 @@ LIMIT
 
 ![top 10 products by profit](SQL/top_10_products_profit.png)
 
-You can see the [SQL script](SQL/sql-queries_superstore-db.sql) for details.
+You can see the [SQL script](SQL/sql-queries_superstore-db.sql) for more details.
 
 ## DATA MODEL
 
-For creating a data model I used [SqlDBM](https://sqldbm.com).
+For creating the data model, I used [SqlDBM](https://sqldbm.com).
 ![Physical data model](data_model_superstoredb.png)
 
-See the script for creating the tables and inserting data [here](Portfolio/SQL/from_stg_to_dw_superstore.sql). I connected AWS RDS to my PostgreSQL instance.
+Check the script for creating the tables and inserting data [here](SQL/from_stg_to_dw_superstore.sql). I connected AWS RDS to my PostgreSQL instance.
 
 ## TABLEAU
-See the interactive version [here](https://public.tableau.com/app/profile/olga.romanova7546/viz/Superstore-onemoretime/Dashboard1).
-The KPIs show data compared to the same month of the previous year. Profit dynamics chart displays both dots (current and previous year profit) depending on the selected month and year.
+View the interactive version [here](https://public.tableau.com/app/profile/olga.romanova7546/viz/Superstore-onemoretime/Dashboard1).
+The KPIs showcase data compared to the same month of the previous year. The profit dynamics chart displays both dots (representing current and previous year profit) depending on the selected month and year.
 
-My theory was that returns impact the profit a lot, this can be seen on the bottom charts.
+My hypothesis was that returns significantly impact the profit, this can be seen on the bottom charts.
 
 ![Tableau profit summary 1](dataviz/Tableau_superstore_summary_1.png)
 ![Tableau profit summary 2](dataviz/Tableau_superstore_summary_2.png)
 
 ## GOOGLE LOOKER STUDIO
 
-Pretty much the same questions answered with the help of [Google Looker Studio](https://lookerstudio.google.com/reporting/e2b934b3-b338-4fcb-81fd-2cd2e8ab776f)
+Essentially, the same questions were addressed using [Google Looker Studio](https://lookerstudio.google.com/reporting/e2b934b3-b338-4fcb-81fd-2cd2e8ab776f)
 
 ![Superstore dashboard in Looker studio 1](dataviz/Looker_superstore_dashboard_1.png)
 ![Superstore dashboard in Looker studio 2](dataviz/Looker_superstore_dashboard_2.png)
 
-Here, I came across a restriction/bug in Looker functionality with the chart 'Profit and sales dynamics'. When trying to change data granularity in blended data (I wanted to change the date aggregation from days to months), only the ticks in axis X change, the data stays the same by days (not by months). I used a workaround on the data source level: added the dimension 'year-month' in text format. It's not too pretty, but works nonetheless. Judging by what I found on the internet, this bug is known since 2021.
+Here, I encountered a restriction/bug in Looker functionality with the chart 'Profit and sales dynamics'. When attempting to change data granularity in blended data (switching from daily to monthly aggregation), only the ticks on the X-axis change, while the data remains unchanged by days (not by months). To overcome this, I used a workaround at the data source level, adding the dimension 'year-month' in text format. Although not ideal, it serves the purpose. According to what I found on the internet, this bug has been known since 2021.
 
-Also, there is no way to edit the format of the optional metric marker currently. So if this was a dashboard for production, I would go for two separate charts for sales and profit. 
+Additionally, there is no way to edit the format of the optional metric marker currently. Thus, if it was a dashboard for production, I would opt for two separate charts for sales and profit. 
 
 ## AMAZON QUICKSIGHT
 

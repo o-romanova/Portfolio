@@ -135,7 +135,7 @@ Additionally, there is no way to edit the format of the optional metric marker c
 
 ![Dashboard in Quicksight](dataviz/Amazon_Quicksight_dashboard.png)
 
-Unfortunately, Quicksight allows only internal access to the dashboards and reports. 
-I liked the level of flexibility that Quicksight provides in terms of data manipulation. However, it lacks the same flexibility from the point of view of style and design.
+Unfortunately, Quicksight only allows internal access to the dashboards and reports. 
+I liked the level of flexibility that Quicksight provides in terms of data manipulation. However, it lacks the same flexibility from a style and design perspective.
 
 If you have any questions, please feel free to reach out here on [Linkedin](https://www.linkedin.com/in/olgaromanova-8/).

@@ -4,9 +4,18 @@
 
 ![babyviz](Babyviz-dashboard.png)
 
-The goal of this project is to answer the question: where did all time go when my daughter was younger, and what it takes to raise a child up to 3,5 years.
+Following the award of Nobel prize in Economical Sciences to Claudia Goldin "for having advanced our understanding of women’s labour market outcomes", I decided to contribute to the topic as well.
 
-From my child's birth, I used the "Baby Tracker" app to keep the track of multiple areas of her life (`30,402` entries during approximately `3.8 years`). The app provides export into .xlsx file. Since the app was evolving througout those years, and I was not using it quite consistently, some cleaning was required to work with the data.
+![Nobel prize](nobelprize.png)
+*The picture is taken from the [Nobel prize website](https://www.nobelprize.org/prizes/economic-sciences/2023/press-release/)*
+
+I remember seeing the similar picture long time ago, and it really scared me (and still does). Unfortunately, the reality is that women still take the hardest hit on their career from having a baby. However, it is possible to flatten that curve and still have a family. In my opinion, the key element here is the partner who shares the load. Therefore, the most important thing is shifting the paradigm. It is already happening, but we are still far from the equality in caring for children as a society. I am very lucky to have my husband who let me study and progress my career. 
+
+However, I know that it is not always the case, so it is important to continue the discussion. 
+
+I decided to visualize the data from the baby tracker app. The goal of this project is to answer the question: where did all time go when my daughter was younger, and to put it to numbers, what it takes to raise a child up to 3,5 years. The project considers only the measures that can be counted and aggregated. So in reality the number is higher.
+
+From my child's birth, I used the "Baby Tracker" app to keep the track of multiple areas of her life (`30,402` entries during approximately `3.8 years`). The app provides export to .xlsx file. Since the app was evolving througout those years, and I was not using it quite consistently, some cleaning was required to work with the data.
 
 Additionally, I introduced some columns and calculations for correct visualization. If I had the task to store and update the data, I would use the different approach. Here, it was just one-time data entry and visualization.
 
@@ -27,7 +36,7 @@ Additionally, I introduced some columns and calculations for correct visualizati
     3.3 Ensured that all medication names are entered in the uniform way.
 
 4. Manually inserted select values from notes (no single pattern to automate). Added 39 rows -> 30,441 rows total. 
-The reason for this is that the app input was different in the beginning. Plus, I decided to add vaccination information.
+The reason for this is that the app input was different in the beginning.
 
 5. Split rows that spanned two days into two parts (each row into two rows) for correct visualization. 
 I used a temporary table for that: 
@@ -46,7 +55,7 @@ I used a temporary table for that:
     7.1 sleep (5167 rows),
 
     7.2 feeding (17714 rows),
-    
+
     7.3 diaper changes (6306 rows).
 
 ## VISUALIZING
@@ -68,16 +77,16 @@ Since this selected interval impacts the calculation of the 'KPIs', I had to mak
 Filtering the individual charts in the selected layout doesn't provide any additional value, therefore, not too much freedom for the viewers. 
 
 #### Calculations
-I introduced several additional calculations to display day/night sleep and feeding and to calculate KPIs and particularly total parent time.
+I introduced several additional calculations to display day/night sleep and feeding and to calculate the key measures and particularly total parent time.
 
-First, I wanted to use quite complex logic for day/night sleep since the pattern was too chaotic, but for the same reason the best solution turned out to make it simple. 
+In the beginning, I wanted to use quite complex logic for day/night sleep since the pattern was too chaotic, but for the same reason the best solution turned out to make it simple. 
 
 For calculating parent time, I decided to add up the following:   feeding duration + diaper change instances * 5 min + outdoor time + 1 h + day sleep instances * 1.5 h + 2 h preparation for night sleep. 
 
-Not all activities were recorded throughout the entire period: breastfeeding ended in the end of 2021, we said good bye to diapers in Summer 2022, and I just stopped recording our walks and meals in the end of 2022 and beginning of 2023 respectively. 
+Not all activities were recorded throughout the entire period: breastfeeding ended in the end of 2021; we said good bye to the diapers in the Summer of 2022, and I stopped recording our walks and meals in the end of 2022 and beginning of 2023 respectively. 
 
-Therefore, the average numbers on top (breastfeeding, diaper change etc) will be wrong in case a viewer selects the end date after the activity wasn't recorded (and the start date will still return some values). But I decided not to limit the date range out of curiosity. In production environment, the choice would be in favour of stability and correctness. 
+Therefore, the average numbers on top (breastfeeding, diaper change etc) will be wrong in case a viewer selects the end date after the activity wasn't recorded (and the start date will still return some values). But I decided not to limit the date range out of curiosity. In the production environment, the choice would be in favour of stability and correctness. 
 
 ### Summary
-Well, the numbers are really frightening, but if I had such information before I had my daughter, that could help a lot. Even though all babies and parents are different, I still remember my devastation that breastfeeding takes so much time. Being more prepared would be benefitial for sure.
+Well, the numbers are really frightening, but if I had such information before I had my daughter, that could help a lot with planning. Even though all babies and parents are different, I still remember my devastation that breastfeeding takes so much time. Being more prepared would be benefitial for sure.
 

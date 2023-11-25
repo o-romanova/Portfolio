@@ -1,7 +1,7 @@
 ### Olga Romanova
 # Portfolio. Business Intelligence Analyst
 
-This entire project is based on the same [Superstore dataset](Sample-Superstore-dataset.xls). I used the tools listed below  to answer the same question: where does the money come from and where is it lost?
+This entire project is based on the same classic [Superstore dataset](Sample-Superstore-dataset.xls). I used the tools listed below  to answer the same question: where does the money come from and where is it lost?
 
 ## SQL
 To begin, I decided to work with the dataset as is, without any alterations. Below are some examples of queries that address the questions I explored in the data visualization parts.
@@ -139,3 +139,5 @@ Unfortunately, Quicksight only allows internal access to the dashboards and repo
 I liked the level of flexibility that Quicksight provides in terms of data manipulation. However, it lacks the same flexibility from a style and design perspective.
 
 If you have any questions, please feel free to reach out here on [Linkedin](https://www.linkedin.com/in/olgaromanova-8/).
+
+[Back to portfolio contents :leftwards_arrow_with_hook:](/Portfolio/README.md)

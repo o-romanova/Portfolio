@@ -90,3 +90,4 @@ Therefore, the average numbers on top (breastfeeding, diaper change etc) will be
 ### Summary
 Well, the numbers are really frightening, but if I had such information before I had my daughter, that could help a lot with planning. Even though all babies and parents are different, I still remember my devastation that breastfeeding takes so much time. Being more prepared would be benefitial for sure.
 
+[Back to portfolio contents :leftwards_arrow_with_hook:](/Portfolio/README.md)

@@ -7,7 +7,7 @@
 Following the award of Nobel prize in Economical Sciences to Claudia Goldin "for having advanced our understanding of women’s labour market outcomes", I decided to contribute to the topic as well.
 
 ![Nobel prize](nobelprize.png)
-*The picture is taken from the [Nobel prize website](https://www.nobelprize.org/prizes/economic-sciences/2023/press-release/)*
+*© Johan Jarnestad/The Royal Swedish Academy of Sciences [Nobel prize website](https://www.nobelprize.org/prizes/economic-sciences/2023/press-release/)*
 
 I remember seeing the similar picture long time ago, and it really scared me (and still does). Unfortunately, the reality is that women still take the hardest hit on their career from having a baby. However, it is possible to flatten that curve and still have a family. In my opinion, the key element here is the partner who shares the load. Therefore, the most important thing is shifting the paradigm. It is already happening, but we are still far from the equality in caring for children as a society. I am very lucky to have my husband who let me study and progress my career. 
 
@@ -49,7 +49,7 @@ I used a temporary table for that:
 
     5.4 Inserted data from the temporary table to the original table -> **31490 rows**.
 
-6. Updated the table by extacting time from start and end timestamps and converting it to decimal for correct visualization.
+6. Updated the table by extracting time from start and end timestamps and converting it to decimal for correct visualization.
 7. Calculated time since previous and to next activities for:
 
     7.1 sleep (5167 rows),

@@ -71,7 +71,7 @@ The choice of graphics was pretty straightforward since there aren't many ways t
 ### User experience
 
 #### Filtering
-The only filter that I decided to allow the users to control is selecting the start and the end date. 
+The only filter that I decided to allow the users to control is selecting the start and the end date, plus breastfeeding/solid foods. 
 Since this selected interval impacts the calculation of the 'KPIs', I had to make it via parameters and a filter. Unfortunately, Tableau doesn't support multiple-value parameters, so this is the explanation of not ideal implementation of two sliders.
 
 Filtering the individual charts in the selected layout doesn't provide any additional value, therefore, not too much freedom for the viewers. 
@@ -91,3 +91,5 @@ Therefore, the average numbers on top (breastfeeding, diaper change etc) will be
 Well, the numbers are really frightening, but if I had such information before I had my daughter, that could help a lot with planning. Even though all babies and parents are different, I still remember my devastation that breastfeeding takes so much time. Being more prepared would be benefitial for sure.
 
 [Back to portfolio contents :leftwards_arrow_with_hook:](/Portfolio/README.md)
+
+https://github.com/o-romanova/Portfolio/blob/main/README.md

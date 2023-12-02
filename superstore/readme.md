@@ -140,4 +140,4 @@ I liked the level of flexibility that Quicksight provides in terms of data manip
 
 If you have any questions, please feel free to reach out here on [Linkedin](https://www.linkedin.com/in/olgaromanova-8/).
 
-[Back to portfolio contents :leftwards_arrow_with_hook:](/Portfolio/README.md)
+[Back to portfolio contents :leftwards_arrow_with_hook:](https://github.com/o-romanova/Portfolio/blob/main/README.md)
